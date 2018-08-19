@@ -172,7 +172,7 @@ img{
   padding: 1.5em;
 }
 
-/* code: pure css popup box */
+/* codePen: pure css popup box */
 .box {
   width: 70%;
   height: auto;
@@ -253,6 +253,7 @@ img{
   overflow: auto;
 }
 
+/* codePen: alert box */
 .alert {
     width: 100%;
     background-color: black;
