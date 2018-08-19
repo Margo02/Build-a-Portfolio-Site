@@ -1,0 +1,275 @@
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: 'Roboto', Arial;
+  font-size: 16px;
+  color: #424242;
+}
+
+/*Header&Logo Title*/
+.header{
+  width: 100%;
+  min-height: 56px;
+  background-color: #d8d4e4;
+}
+
+.header__logo {
+  vertical-align: baseline;
+  margin-top: 12px;
+  margin-left: 10px;
+  width: 75px;
+  float: left;
+  color: #9ca4e0;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 3em;
+  color: #65698a;
+  text-transform: uppercase;
+  display: inline;
+  line-height: normal;
+}
+
+.header_subtitle{
+   font-weight: 100;
+   font-size: 1.5em;
+   color: #9ca4e0;
+}
+
+/*title&subtitle move to right*/
+#right{
+  float: right;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* Gradient color1 - color2 - color1 */
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* Gradient transparent - color - transparent */
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*quote*/
+#c {
+  quotes:none;
+  font-size: 15px;
+  font-style: italic;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+/* Main column */
+.mainColumn {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+  float: none;
+  padding: 10px;
+  border: solid 30px #e8e8ea;
+}
+
+/* style for text, main_image*/
+.container{
+ position: relative;
+ text-align: center;
+}
+
+.main_image{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  opacity: 0.5;
+  /*filter: alpha(opacity=50); /* for IE8 and earlier*/
+}
+
+/*center text over main picture*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered #c{
+  font-size: 16px;
+  font-style: italic;
+}
+
+.column {
+  flex: 1;
+  width:100%;
+  height: auto;
+  margin-left: 20px; /*320px*/
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: solid 1px #bcbcc7;
+  background-color: #f0f0f5;
+  text-align: center;
+}
+
+.column img{
+  margin-top: 10px;
+  border: solid 10px #e8e8ea;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.main_image{
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+
+/* code: pure css popup box */
+.box {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 25px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #7474e2;
+  border: 2px solid #7474e2;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: #c3c3e6;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.alert {
+    width: 100%;
+    background-color: black;
+    padding: 60px;
+    color: red;
+}
+
+.closebtn {
+    color: red;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
