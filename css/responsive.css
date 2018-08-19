@@ -28,11 +28,11 @@
 
  /*make quote to hide on galaxy*/
  @media screen and (max-width:375px){
-   .centered #c{
+   .centered #quote{
      display: none;
    }
  }
- 
+
 @media screen and (min-width:376px) {
   .alert{
     display: none;
@@ -67,7 +67,7 @@
  next to each other */
  @media screen and (max-width: 700px) {
      .row, .column {
-         flex-direction: column;
+       flex-direction: column;
      }
  }
 
@@ -84,7 +84,7 @@
      width: 50%;
      height: auto;
    }
-   .popup{
+   .pMSG{
      width: 70%;
    }
  }
@@ -94,7 +94,7 @@
      width: 100%;
      height: auto;
    }
-   .popup{
+   .pMSG{
      width: 80%;
    }
  }
