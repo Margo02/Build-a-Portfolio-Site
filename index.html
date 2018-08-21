@@ -5,28 +5,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
  <!--header-->
  <div class="row">
-  <div class="header">
-    <div>
-     <img class="header__logo" src="images/logo-T.png" alt="T">
+  <header class="header">
+    <img class="header__logo" src="images/logo-T.png" alt="T">
      <div id="right">
       <h1 class="header__title">Margaret Thurston</h1>
       <h2 class="header_subtitle">Front End Ninja</h2>
-     </div>
-   </div>
-  </div>
+    </div>
+  </header>
 </div>
 <!--main body -->
 <main>
 <hr class="style-one">
-<div class="row">
 <!--Big picture -->
+<div class="row">
   <div class="mainColumn">
    <div class="container">
     <img class="main_image" src="images/computer.jpg" srcset="images/computer-1280.jpg 1x, images/computer-1920.jpg 2x" alt="Quote">
@@ -38,10 +36,11 @@
           <br/>
           - Ayn Rand, Atlas Shrugged
         </blockquote>
+      <!-- display quote on small divices-->
       <div class="alert">
          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;
          </span>
-        <blockquote>“If you don't know,
+        <blockquote id="quoteSmall">“If you don't know,
         the thing to do is not to get scared,
         but to learn.”
         </blockquote>
@@ -63,7 +62,7 @@
 	     <a class="button" href="#popup1">Projects</a>
     </div>
   <div id="popup1" class="overlay">
-	 <div class="pMSG">
+	 <div class="popupMSG">
 		 <h2>Projects</h2>
 		 <a class="close" href="#">&times;</a>
 		<div class="content">
@@ -78,7 +77,7 @@
 	     <a class="button" href="#popup2">News</a>
      </div>
     <div id="popup2" class="overlay">
-     <div class="pMSG">
+     <div class="popupMSG">
       	<h2>News</h2>
       		<a class="close" href="#">&times;</a>
       		<div class="content">
@@ -93,8 +92,8 @@
 	     <a class="button" href="#popup3">Travel</a>
       </div>
     </div>
-     <div id="popup3" class="overlay">
-       <div class="pMSG">
+    <div id="popup3" class="overlay">
+      <div class="popupMSG">
         <h2>Travel</h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
@@ -107,8 +106,7 @@
   <!-- Footer -->
   <div class="footer">
     <hr class="style-two">
-    <h2>@2018 My Portofolio
-    </h2>
+    <h2>@2018 My Portofolio</h2>
     <p><a href="#top">Back to Top</a></p>
    </div>
  </div> <!-- row end -->
