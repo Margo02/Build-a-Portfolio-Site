@@ -7,8 +7,7 @@
 
  /*responsive* on small browser align left logo& headrer title&subtitle*/
  @media (max-width: 410px) {
-   #right  {
-     float: left;
+   #right {
      text-align: left;
    }
  }
@@ -22,25 +21,27 @@
  @media (max-width: 410px) {
    .header__logo {
      margin-bottom: 10px;
-     width: 35px;
+     margin-right: 10px;
+     width: 55px;
+     height: 65px;
    }
  }
 
  /*make quote to hide on galaxy*/
- @media screen and (max-width:375px){
-   .centered #quote{
+ @media screen and (max-width:410px) {
+   .centered #quote {
      display: none;
    }
  }
 
-@media screen and (min-width:376px) {
-  .alert{
+@media screen and (min-width:411px) {
+  .alert {
     display: none;
   }
 }
 
- @media screen and (min-width:710px){
-   .mainColumn img{
+ @media screen and (min-width:710px) {
+   .mainColumn img {
      width:100%;
      height:510px;
      object-fit: cover;
@@ -48,14 +49,14 @@
  }
 
  /*baground color change to darker on bigger screen **/
- @media screen and (min-width:510px){
-   .column{
+ @media screen and (min-width:510px) {
+   .column {
      background-color: #d1d1e0;
    }
  }
 
- @media screen and (max-width:3750px){
-   .column{
+ @media screen and (max-width:3750px) {
+   .column {
      width: 90%;
      border: solid 1px #bcbcc7;
    }
@@ -66,35 +67,36 @@
  the pictures stack on top of each other instead of
  next to each other */
  @media screen and (max-width: 700px) {
-     .row, .column {
+     .row,
+     .column {
        flex-direction: column;
      }
  }
 
  @media screen and (min-width: 300px) {
-     .column img{
+     .column img {
        width: 105px;
        height: 105px;
        background-color: red;
      }
  }
 
- @media screen and (min-width: 300px) and (max-width: 700px){
-   .box{
+ @media screen and (min-width: 300px) and (max-width: 700px) {
+   .box {
      width: 50%;
      height: auto;
    }
-   .pMSG{
+   .popupMSG{
      width: 70%;
    }
  }
 
- @media screen and (min-width: 701px){
-   .box{
+ @media screen and (min-width: 701px) {
+   .box {
      width: 100%;
      height: auto;
    }
-   .pMSG{
+   .popupMSG {
      width: 80%;
    }
  }
