@@ -14,15 +14,17 @@ html, body {
   height: 100%;
 }
 
-body{
-  font-family: 'Roboto', Arial;
+body {
+  font-family: Roboto;
   font-size: 16px;
   color: #424242;
 }
 
 /*Header&Logo Title*/
-.header{
+.header {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   min-height: 56px;
   background-color: #d8d4e4;
 }
@@ -32,7 +34,7 @@ body{
   margin-top: 12px;
   margin-left: 10px;
   width: 75px;
-  float: left;
+  height: 85px;
   color: #9ca4e0;
   border: 1px solid;
   padding: 10px;
@@ -48,21 +50,20 @@ body{
   line-height: normal;
 }
 
-.header_subtitle{
+.header_subtitle {
    font-weight: 100;
    font-size: 1.5em;
    color: #9ca4e0;
 }
 
 /*title&subtitle move to right*/
-#right{
-  float: right;
+#right {
   text-align: right;
   margin-right: 10px;
 }
 
 /* CSS tricks hr style */
-hr.style-one {
+.style-one {
   border: 0;
   height: 1px;
   background: #333;
@@ -70,16 +71,21 @@ hr.style-one {
 }
 
 /*CSS tricks hr style */
-hr.style-two {
+.style-two {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 /*quote*/
-#quote{
+#quote {
   quotes:none;
-  font-size: 15px;
+  font-weight: bold;
+}
+
+/*quote*/
+#quoteSmall {
+  quotes:none;
   font-style: italic;
 }
 
@@ -100,12 +106,12 @@ main {
 }
 
 /* style for text, main_image*/
-.container{
+.container {
  position: relative;
  text-align: center;
 }
 
-.main_image{
+.main_image {
   width: 100%;
   height: auto;
   padding: 20px;
@@ -123,7 +129,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.centered #quote{
+.centered #quote {
   font-size: 16px;
   font-style: italic;
 }
@@ -141,19 +147,19 @@ main {
   text-align: center;
 }
 
-.column img{
+.column img {
   margin-top: 10px;
   border: solid 10px #e8e8ea;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-.main_image{
+.main_image {
   object-fit: cover;
 }
 
@@ -217,7 +223,7 @@ img{
   opacity: 1;
 }
 
-.pMSG {
+.popupMSG {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -228,13 +234,13 @@ img{
   transition: all 5s ease-in-out;
 }
 
-.pMSG h2 {
+.popupMSG h2 {
   margin-top: 0;
   color: #65698a;
   font-family: Arial, sans-serif;
 }
 
-.pMSG .close {
+.popupMSG .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -242,16 +248,17 @@ img{
   font-weight: bold;
   transition: all 200ms;
   text-decoration: none;
+  display: inline;
   color: #FF0000;
 }
 
-.pMSG .close:hover {
-  color: #800000;
-}
-
-.pMSG .content {
+.popupMSG .content {
   max-height: 30%;
   overflow: auto;
+}
+
+.popupMSG .close:hover {
+  color: #800000;
 }
 
 /* codePen: alert box */
@@ -259,11 +266,11 @@ img{
     width: 100%;
     background-color: black;
     padding: 60px;
-    color: red;
+    color: #FF0000;
 }
 
 .closebtn {
-    color: red;
+    color: #FF0000;
     font-weight: bold;
     float: right;
     font-size: 22px;
@@ -273,5 +280,5 @@ img{
 }
 
 .closebtn:hover {
-    color: black;
+    color: white;
 }
